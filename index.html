@@ -1,64 +1,289 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>SkillManager - Gerencie suas habilidades de forma inteligente</title>
-        <link rel="stylesheet" href="styles.css">
-    </head>
-    <body>
-    <div class="hero-image">
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SkillManager - Página Inicial</title>
+  
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header>
+    <div class="nome__projeto">
+      <div>
+        <img src='/assets/images/logoSemTexto.png' alt='logo'>
+      </div>
+      <div>
+        <h1>SKILLMANAGER </h1>
+        <aside>Acompanhe, Avalie, Evolua</aside>
+      </div>
+    </div>
+
+    <button class="menu-toggle" id="menu-toggle-button">
+      ☰
+    </button>
+
+    <div class="redes__sociais mobile-hidden" id="header-social-links">
+      <div>
+        <img src="/assets/images/facebook.png" alt="facebook" />
+      </div>
+      <div>
+        <img src="/assets/images/instagram.png" alt="instagram" />
+      </div>
+      <div>
+        <img src="/assets/images/twitter.png" alt="twitter" />
+      </div>
+      <div>
+        <img src="/assets/images/chat.png" alt="fale-conosco" />
+      </div>
+    </div>
+  </header>
+
+  <nav class="navegacao" id="main-nav">
+    <ul>
+      <li><a href="/">HOME</a></li>
+      <li><a href="/quem-somos">QUEM SOMOS</a></li>
+      <li><a href="/contato">FALE CONOSCO</a></li>
+      <li><a href="/login">LOGIN</a></li>
+      <li><a href="/cadastro">CADASTRO</a></li>
+    </ul>
+  </nav>
+  <main class="main-inicial">
+    <div class="hero-section">
+      <div class="hero-content">
+        <div class="hero-badge">
+          <span class="badge-text">NOVO</span>
+          <span class="badge-divider">•</span>
+          <span class="badge-highlight">Versão 2.0 disponível</span>
+        </div>
+        <h1 class="hero-title">Gerencie suas <span class="highlight">habilidades</span> de forma inteligente</h1>
+        <p class="hero-description">
+          Transforme seu potencial em resultados concretos. Nosso sistema inteligente ajuda você a identificar, 
+          desenvolver e acompanhar suas competências de maneira eficaz e personalizada.
+        </p>
+        <div class="hero-buttons">
+          <a href="/login" class="btn-primary">Começar agora</a>
+        </div>
+        <div class="hero-stats">
+          <div class="stat-item">
+            <span class="stat-number">500+</span>
+            <span class="stat-label">Empresas</span>
+          </div>
+          <div class="stat-item">
+            <span class="stat-number">10K+</span>
+            <span class="stat-label">Usuários</span>
+          </div>
+          <div class="stat-item">
+            <span class="stat-number">98%</span>
+            <span class="stat-label">Satisfação</span>
+          </div>
+        </div>
+      </div>
+      <div class="hero-image">
         <div class="logo-central">
-            <div>
-                <div class="logo-icon-container">
-                    <img src="assets/images/logoSemTexto.png" alt="icone-grafico" />
-                </div>
-                <h1>SKILLMANAGER</h1>
+          <div>
+            <div class="logo-icon-container">
+              <img src="/assets/images/icone-grafico.png" alt="icone-grafico" />
             </div>
+            <h1>SKILLMANAGER</h1>
+            <aside>Evolua suas competências</aside>
+          </div>
         </div>
         <div class="hero-decoration">
-            <div class="decoration-circle circle-1"></div>
-            <div class="decoration-circle circle-2"></div>
-            <div class="decoration-circle circle-3"></div>
+          <div class="decoration-circle circle-1"></div>
+          <div class="decoration-circle circle-2"></div>
+          <div class="decoration-circle circle-3"></div>
         </div>
+      </div>
     </div>
-    <div class="page-container">
-        <main class="main-inicial">
-            <div class="hero-section">
-                <div class="hero-content">
-                    <h1 class="hero-title">Gerencie suas <span class="highlight">habilidades</span> de forma inteligente</h1>
-                    <p class="hero-description">
-                        Transforme seu potencial em resultados concretos. Nosso sistema inteligente ajuda você a identificar, 
-                        desenvolver e acompanhar suas competências de maneira eficaz e personalizada.
-                    </p>
-                    <div class="hero-buttons">
-                        <button class="btn-primary" onclick="navigateToLogin()">Começar agora</button>
-                    </div>
-                    <div class="hero-stats">
-                        <div class="stat-item">
-                            <span class="stat-number">500+</span>
-                            <span class="stat-label">Empresas</span>
-                        </div>
-                        <div class="stat-item">
-                            <span class="stat-number">10K+</span>
-                            <span class="stat-label">Usuários</span>
-                        </div>
-                        <div class="stat-item">
-                            <span class="stat-number">98%</span>
-                            <span class="stat-label">Satisfação</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </main>
+  </main>
 
+  <div class="features-section">
+    <div class="section-header">
+      <h2 class="section-title">Recursos que <span class="highlight">impulsionam</span> resultados</h2>
+      <p class="section-description">
+        Ferramentas completas para transformar a gestão de competências em vantagem competitiva.
+      </p>
+    </div>
+
+    <div class="features-grid">
+      <div class="feature-card">
+        <div class="feature-icon primary">
+          <img src="../assets/images/icone-pessoa.png" alt="icone-pessoa" />
+        </div>
+        <div class="feature-content">
+          <h3>Gestão de usuários</h3>
+          <p>Cadastre e gerencie perfis de usuários com facilidade. Organize equipes e acompanhe progressos individuais.</p>
+        </div>
+        <div class="feature-link">
+          <span>Saiba mais</span>
+          <span class="arrow">→</span>
+        </div>
+      </div>
+
+      <div class="feature-card">
+        <div class="feature-icon secondary">
+          <img src="../assets/images/icone-grafico.png" alt="icone-grafico" />
+        </div>
+        <div class="feature-content">
+          <h3>Avaliações detalhadas</h3>
+          <p>Sistema completo de avaliação de competências com métricas precisas e relatórios visuais.</p>
+        </div>
+        <div class="feature-link">
+          <span>Saiba mais</span>
+          <span class="arrow">→</span>
+        </div>
+      </div>
+
+      <div class="feature-card">
+        <div class="feature-icon primary">
+          <img src="../assets/images/icone-alvo.png" alt="icone-alvo" />
+        </div>
+        <div class="feature-content">
+          <h3>Metas personalizadas</h3>
+          <p>Defina objetivos customizados para cada habilidade e acompanhe o progresso em tempo real.</p>
+        </div>
+        <div class="feature-link">
+          <span>Saiba mais</span>
+          <span class="arrow">→</span>
+        </div>
+      </div>
+
+      <div class="feature-card">
+        <div class="feature-icon secondary">
+          <img src="../assets/images/icone-prémio.png" alt="icone-prémio" />
+        </div>
+        <div class="feature-content">
+          <h3>Reconhecimento</h3>
+          <p>Sistema de badges e certificações para valorizar conquistas e motivar o desenvolvimento contínuo.</p>
+        </div>
+        <div class="feature-link">
+          <span>Saiba mais</span>
+          <span class="arrow">→</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="testimonial-section">
+    <div class="testimonial-container">
+      <div class="testimonial-content">
+        <h3 class="testimonial-quote">"O SkillManager revolucionou nossa forma de gerenciar o desenvolvimento profissional. A plataforma é intuitiva e os resultados são impressionantes."</h3>
+        <div class="testimonial-author">
+          <div class="author-avatar">
+            <img src="/assets/images/default-avatar.png" alt="Avatar" />
+          </div>
+          <div class="author-info">
+            <h4 class="author-name">Maria Silva</h4>
+            <p class="author-title">Diretora de RH, TechCorp</p>
+          </div>
+        </div>
+      </div>
+      <div class="testimonial-stats">
+        <div class="stat-item">
+          <span class="stat-number">4.9</span>
+          <span class="stat-label">Avaliação média</span>
+        </div>
+        <div class="stat-item">
+          <span class="stat-number">95%</span>
+          <span class="stat-label">Recomendariam</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="cta-section">
+    <div class="cta-content">
+      <h2 class="cta-title">Pronto para <span class="highlight">evoluir</span> suas competências?</h2>
+      <p class="cta-description">
+        Junte-se a centenas de profissionais que já transformaram sua carreira com o SkillManager
+      </p>
+      <div class="cta-form">
+        <input type="email" placeholder="Seu melhor e-mail" class="cta-input" />
+        <a href="/login" class="cta-button">Começar grátis</a>
+      </div>
+      <div class="cta-guarantee">
+        <span class="guarantee-icon">✓</span>
+        <span class="guarantee-text">Comece gratuitamente • Cancele a qualquer momento</span>
+      </div>
+    </div>
+  </div>
+  <footer class="footer">
+    <div class="footer-content">
+      <div class="footer-section">
+        <h3>SkillManager</h3>
+        <p class="footer-description">
+          Plataforma completa para gerenciamento de estagiários, 
+          com avaliações personalizadas e feedback contínuo.
+        </p>
+        <div class="social-links">
+          <a href="#" class="social-link">
+            <img src="/assets/images/facebook.png" alt="Facebook" />
+          </a>
+          <a href="#" class="social-link">
+            <img src="/assets/images/instagram.png" alt="Instagram" />
+          </a>
+          <a href="#" class="social-link">
+            <img src="/assets/images/twitter.png" alt="Twitter" />
+          </a>
+          <a href="#" class="social-link">
+            <img src="/assets/images/linkedin.png" alt="LinkedIn" />
+          </a>
+        </div>
+      </div>
+      
+      <div class="footer-section">
+        <h4>Links Rápidos</h4>
+        <ul>
+          <li><a href="/">Home</a></li>
+          <li><a href="/quem-somos">Quem Somos</a></li>
+          <li><a href="/contato">Fale Conosco</a></li>
+          <li><a href="/login">Login</a></li>
+          <li><a href="/cadastro">Cadastro</a></li>
+        </ul>
+      </div>
+      
+      <div class="footer-section">
+        <h4>Contato</h4>
+        <ul>
+          <li>contato@skillmanager.com</li>
+          <li>(71) 99999-9999</li>
+          <li>Salvador, Bahia</li>
+        </ul>
+      </div>
+    </div>
+    
+    <div class="footer-bottom">
+      <p>© 2025 SkillManager. Todos os direitos reservados.</p>
+    </div>
+  </footer>
+  <script>
+    // Espera o documento carregar antes de rodar o script
+    document.addEventListener('DOMContentLoaded', function() {
+      
+      // Pega os elementos do HTML pelos IDs que adicionamos
+      const menuToggleButton = document.getElementById('menu-toggle-button');
+      const mainNav = document.getElementById('main-nav');
+      const headerSocialLinks = document.getElementById('header-social-links');
+
+      // Adiciona um "escutador" de clique no botão
+      menuToggleButton.addEventListener('click', function() {
+        // Alterna a classe 'active' na navegação (para mostrar/esconder)
+        const isOpen = mainNav.classList.toggle('active');
         
-    <script src="script.js"></script>
-    <script>
-        function navigateToLogin() {
-            // In a real implementation, this would navigate to the login page
-            alert('Navegando para a página de login...');
+        // Alterna a classe 'mobile-hidden' nos ícones sociais
+        headerSocialLinks.classList.toggle('mobile-hidden');
+        
+        // Muda o ícone do botão (de hamburger para 'X' e vice-versa)
+        if (isOpen) {
+          menuToggleButton.textContent = '✕'; // 'X' para fechar
+        } else {
+          menuToggleButton.textContent = '☰'; // 'Hamburger'
         }
-    </script>
-</body>
+      });
+    });
+  </script>
+  </body>
 </html>
